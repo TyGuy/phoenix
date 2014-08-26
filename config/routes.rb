@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
+  devise_for :core_members
+  devise_for :mentors
+  devise_for :mentees
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
+  root 'members#index'
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
