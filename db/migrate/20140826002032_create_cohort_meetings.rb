@@ -1,0 +1,8 @@
+class CreateCohortMeetings < ActiveRecord::Migration
+  def change
+    create_table :cohort_meetings do |t|
+
+      t.timestamps
+    end
+  end
+end
